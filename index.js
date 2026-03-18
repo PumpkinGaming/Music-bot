@@ -18,9 +18,10 @@ const client = new Client({
   ],
 });
 
+const ffmpegPath = require('ffmpeg-static');
 const distube = new DisTube(client, {
   ffmpeg: {
-    path: 'ffmpeg',
+    path: ffmpegPath,
   },
   plugins: [new YouTubePlugin()],
 });
