@@ -1,0 +1,15 @@
+app = "music-bot-m0wy3g"
+primary_region = "waw"
+
+[build]
+  builder = "heroku/buildpacks:20"
+
+[env]
+  NODE_ENV = "production"
+
+[[services]]
+  internal_port = 3000
+  protocol = "tcp"
+
+[processes]
+  app = "node index.js"
