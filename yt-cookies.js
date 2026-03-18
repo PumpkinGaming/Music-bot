@@ -1,4 +1,4 @@
-const play = require('play-dl');
+const play = require('youtube-dl-exec');
 
 async function setup() {
   await play.setToken({
