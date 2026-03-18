@@ -24,6 +24,7 @@ const distube = new DisTube(client, {
   ffmpeg: {
     path: ffmpegPath,
   },
+  joinNewVoiceChannel: true,
   plugins: [new YouTubePlugin()],
 });
 
