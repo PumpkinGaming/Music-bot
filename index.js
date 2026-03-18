@@ -1,3 +1,4 @@
+global.sodium = require('libsodium-wrappers');
 process.on('uncaughtException', (err) => {
   console.error('BŁĄD:', err);
 });
