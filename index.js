@@ -19,6 +19,9 @@ const client = new Client({
 });
 
 const distube = new DisTube(client, {
+  ffmpeg: {
+    path: 'ffmpeg',
+  },
   plugins: [new YouTubePlugin()],
 });
 
