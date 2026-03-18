@@ -7,7 +7,7 @@ process.on('unhandledRejection', (err) => {
 
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 const { DisTube } = require('distube');
-const { YtDlpPlugin } = require('@distube/yt-dlp');
+const { YouTubePlugin } = require('@distube/youtube');
 
 const client = new Client({
   intents: [
@@ -19,7 +19,7 @@ const client = new Client({
 });
 
 const distube = new DisTube(client, {
-  plugins: [new YtDlpPlugin({ update: true })],
+  plugins: [new YouTubePlugin()],
 });
 
 const prefix = '!';
